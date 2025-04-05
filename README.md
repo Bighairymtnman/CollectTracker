@@ -21,8 +21,8 @@ Download the latest version of CollectTracker from our [releases page](https://g
 
 ## Technology Stack
 
-- **Frontend**: React.js
-- **Backend**: Express.js with SQLite
+- **Frontend**: React.js, HTML5, CSS3, JavaScript
+- **Backend**: Express.js, SQLite
 - **Desktop Framework**: Electron
 
 ## Project Structure
