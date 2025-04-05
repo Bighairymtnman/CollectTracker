@@ -2,6 +2,13 @@
 
 A desktop application for collectors to organize, track, and showcase their collections.
 
+## Documentation
+
+For full documentation, user guides, and screenshots, visit our [documentation website](https://bighairymtnman.github.io/CollectTracker-docs/).
+
+## Download
+
+Download the latest version of CollectTracker from our [releases page](https://github.com/Bighairymtnman/CollectTracker/releases/latest).
 
 ## Features
 
@@ -74,14 +81,14 @@ CollectTracker/
 
 ### For Users
 
-Download the latest release from the [Releases page](https://github.com).
+Download the latest release from the [Releases page](https://github.com/Bighairymtnman/CollectTracker/releases/latest).
 
 ### For Developers
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/collecttracker.git
-   cd collecttracker
+   git clone https://github.com/Bighairymtnman/CollectTracker.git
+   cd CollectTracker
    ```
 
 2. Install dependencies:
@@ -106,7 +113,7 @@ To build the application:
 ```
 cd client
 npm run build
-cd projectMainDirectory
+cd ..
 npm run package
 ```
 
@@ -129,7 +136,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-
 ## Acknowledgments
 
 - [Electron](https://www.electronjs.org/)
@@ -137,8 +143,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [Express](https://expressjs.com/)
 - [SQLite](https://www.sqlite.org/)
 
+## Links
+
+- [Documentation Website](https://bighairymtnman.github.io/CollectTracker-docs/)
+- [Download Application](https://github.com/Bighairymtnman/CollectTracker/releases/latest)
+- [Report Issues](https://github.com/Bighairymtnman/CollectTracker/issues)
+
 ---
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
