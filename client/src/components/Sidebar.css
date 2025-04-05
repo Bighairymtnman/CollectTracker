@@ -1,0 +1,148 @@
+.sidebar-container {
+    width: 250px;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar-section {
+    margin-bottom: 24px;
+}
+
+.categories-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.categories-header h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.add-category-button {
+    background: #007bff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.add-category-button:hover {
+    background: #0056b3;
+}
+
+.categories-list {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    padding-bottom: 24px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.categories-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.categories-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.categories-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.add-category-form {
+    margin-top: 16px;
+    padding: 8px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.add-category-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button-group button:first-child {
+    background: #4CAF50;
+    color: white;
+}
+
+.button-group button:first-child:hover {
+    background: #45a049;
+}
+
+.button-group button:last-child {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.button-group button:last-child:hover {
+    background: #e5e5e5;
+}
+
+.description-section {
+    margin-top: 20px;
+    padding-right: 8px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;  /* This will keep it from touching the right edge */
+}
+
+.description-section h3 {
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.description-textarea {
+    width: calc(100% - 8px);  /* This ensures it stays within the sidebar */
+    height: 200px;  /* Fixed height */
+    max-height: 200px;  /* Maximum height */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-y: auto;  /* Enables vertical scrolling */
+    background: #f9f9f9;
+}
+
+.description-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+    background: white;
+}

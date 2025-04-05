@@ -1,0 +1,263 @@
+.collections-container {
+    padding: 1rem;
+    background-color: #e8e8e8;
+    color: #2c3e50;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.collection-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.card-type {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #e1f5fe;
+    color: #146cb4;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.card-content {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.item-count {
+    margin: 0 0 0.5rem 0;
+}
+
+.created-date {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    background: #f8f9fa;
+}
+
+.add-card:hover {
+    border-color: #146cb4;
+    background: #fff;
+}
+
+.add-icon {
+    font-size: 2rem;
+    color: #146cb4;
+    margin-bottom: 0.5rem;
+}
+
+/*Edit and Delete buttons for home page */
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.card-actions button {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+
+.card-actions button:first-child {
+    background-color: #146cb4;
+    color: white;
+}
+
+.card-actions button:last-child {
+    background-color: #fa8d44;
+    color: white;
+}
+
+.card-actions button:hover {
+    opacity: 0.9;
+}
+
+.card-header form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-header form input {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Modal buttons - general */
+.button-group button:first-child {
+    background-color: #146cb4;
+    color: white;
+}
+
+.button-group button:last-child {
+    background-color: #fa8d44;
+    color: white;
+}
+
+/* Delete modal buttons - specific override */
+.modal .button-group button:first-child {
+    background-color: #fa8d44;
+    color: white;
+}
+
+.modal .button-group button:last-child {
+    background-color: #146cb4;
+    color: white;
+}
+
+
+/* Search bar styling */
+.search-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #146cb4;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+/* Sorting dropdown styling*/
+.search-and-sort {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sort-container {
+    min-width: 150px;
+}
+
+.sort-select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: #146cb4;
+}
+
+/* Styling for quick add button */
+.collections-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quick-add-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #146cb4;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.quick-add-button:hover {
+    transform: scale(1.1);
+    background-color: #1a7ed0;
+}

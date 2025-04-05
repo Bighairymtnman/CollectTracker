@@ -1,0 +1,38 @@
+.search-and-sort {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.search-container {
+    flex: 1;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sort-container {
+    min-width: 200px;
+}
+
+.sort-select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.search-input:focus,
+.sort-select:focus {
+    outline: none;
+    border-color: #146cb4;
+    box-shadow: 0 0 0 2px rgba(20, 108, 180, 0.1);
+}

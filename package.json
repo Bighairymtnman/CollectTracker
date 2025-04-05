@@ -1,0 +1,62 @@
+{
+  "name": "collecttracker",
+  "version": "1.0.0",
+  "homepage": "./",
+  "description": "Collection tracking desktop application",
+  "main": "main.js",
+  "author": "Andrew",
+  "scripts": {
+      "start": "electron .",
+      "dev": "concurrently \"cd client && cross-env BROWSER=none npm start\" \"cd server && npm start\" \"electron .\"",
+      "build": "cd client && npm run build",
+      "package": "electron-builder build --win",
+      "package-debug": "set DEBUG=electron-builder && electron-builder build --win",
+      "postinstall": "cd client && npm install && cd ../server && npm install"
+  },
+  "dependencies": {
+      "concurrently": "^8.2.2",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.7",
+      "electron-log": "^5.3.3",
+      "express": "^4.21.2",
+      "multer": "1.4.5-lts.2",
+      "mysql2": "^3.14.0",
+      "path": "^0.12.7",
+      "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+      "cross-env": "^7.0.3",
+      "electron": "^25.9.8",
+      "electron-builder": "^26.0.12"
+  },
+  "build": {
+      "appId": "com.collecttracker.app",
+      "productName": "CollectTracker",
+      "directories": {
+          "output": "dist",
+          "buildResources": "build"
+      },
+      "win": {
+          "target": "nsis",
+          "icon": "build/icon.ico"
+      },
+      "files": [
+          "build/**/*",
+          "client/build/**/*",
+          "main.js",
+          "server/**/*",
+          "database/**/*"
+      ],
+      "extraResources": [
+          {
+              "from": "client/build",
+              "to": "."
+          },
+          {
+              "from": "database",
+              "to": "database"
+          }
+      ],
+      "asar": true
+  }
+}

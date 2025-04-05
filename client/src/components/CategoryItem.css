@@ -1,0 +1,113 @@
+.category-item {
+    position: relative;
+    padding: 4px;
+    margin: 1px 0;
+    border-radius: 4px;
+    background: #f5f5f5;
+    width: 100%;
+    cursor: pointer;
+}
+
+.category-item.active {
+    background: #e0e0e0;
+}
+
+
+/* Add this class for top categories */
+.category-item:first-child .category-menu {
+    top: calc(100% - 4px);
+    bottom: auto;
+}
+
+.category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.category-name {
+    flex-grow: 1;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.menu-trigger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 20px;
+    color: #666;
+    margin-right: 8px;
+}
+
+/* Update the category menu positioning */
+.category-menu {
+    position: absolute;
+    right: 8px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+    /* Dynamic positioning - will show below for top items */
+    top: calc(100% - 4px);
+}
+
+.category-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.category-menu button:hover {
+    background: #f0f0f0;
+}
+
+.category-edit {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.category-edit input {
+    flex-grow: 1;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-buttons, .confirm-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.delete-confirm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 20;
+}
+
+.delete-confirm p {
+    margin: 0 0 8px 0;
+}
+
+
+/* Make the cancel button text visible */
+.button-group button:last-child {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333; /* Add this to make text visible */
+}
