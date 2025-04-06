@@ -126,6 +126,17 @@ This will create executables in the `dist` folder.
 3. **Organize with Categories**: Create categories to organize your items
 4. **Search and Filter**: Use the search and filter tools to find specific items
 
+## Learning Resources with Code Examples
+
+Detailed breakdowns of the technologies and patterns used in this project:
+
+- [SQLiteNode Example](https://github.com/Bighairymtnman/SQLiteNode-Reference/blob/main/CollectTrackerSQLiteNodeExample.md)
+- [Electron Example](https://github.com/Bighairymtnman/Electron.js-Reference/blob/main/CollectTrackerElectronExample.md)
+- [React Example](https://github.com/Bighairymtnman/React-Reference/blob/main/CollectTrackerReactExample.md)
+- [Express Example](https://github.com/Bighairymtnman/Express.js-Reference/blob/main/CollectTrackerExpressExample.md)
+
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
