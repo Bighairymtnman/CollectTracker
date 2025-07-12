@@ -10,6 +10,8 @@ For full documentation, user guides, and screenshots, visit our [documentation w
 
 Download the latest version of CollectTracker from our [releases page](https://github.com/Bighairymtnman/CollectTracker/releases/latest).
 
+Now available on Linux devices!
+
 ## Features
 
 - **Collection Management**: Create and organize multiple collections
